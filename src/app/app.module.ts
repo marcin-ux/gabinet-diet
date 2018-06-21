@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 
 import { DashboardModule } from './dashboard/dashboard.module';
 import { MenuModule } from './menu/menu.module';
-import { DayModule } from './day/day.module';
 
 
 @NgModule({
@@ -16,7 +15,6 @@ import { DayModule } from './day/day.module';
     BrowserModule,
     DashboardModule,
     MenuModule,
-    DayModule
   ],
   providers: [],
   bootstrap: [AppComponent]

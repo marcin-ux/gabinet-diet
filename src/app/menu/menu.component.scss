@@ -7,13 +7,30 @@ $menu-font-color: #FFF;
     align-items: baseline;
     background-color: $menu-bg-color;
     color: $menu-font-color;
-    padding: 5px;
+    padding: 10px 15px;
     margin: 0px;
 }
 
-#menu>a {
+#menu>a:link, #menu>a:visited {
+
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     background-color: $menu-bg-color;
     color: $menu-font-color;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu>a:hover {
+    text-decoration: none;
+    padding: 10px;
+    color: lighten($menu-bg-color, 30);
+    background: $menu-font-color;
+}
+
+#menu>a:active {
+    text-decoration: none;
+    padding: 10px;
+    color: $menu-bg-color;
+    background: $menu-font-color;
 }

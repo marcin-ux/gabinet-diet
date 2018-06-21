@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+.columns {
+    display: flex;
+  }
+  
+  .column {
+    //flex-grow: 1;
+    //flex: 1 1 200px;
+    
+    @for $i from 1 through 12 {
+      &.is-#{$i} {
+        flex: 0 0 calc(100% * #{$i / 12});
+      }
+    }
+  }

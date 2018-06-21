@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DayComponent } from './day.component';
+import { MenuComponent } from './menu.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [DayComponent],
+  declarations: [MenuComponent],
   exports: [
-    DayComponent
+    MenuComponent
   ]
 })
-export class DayModule { }
+export class MenuModule { }

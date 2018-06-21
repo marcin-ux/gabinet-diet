@@ -1,0 +1,19 @@
+$menu-bg-color: #333;
+$menu-font-color: #FFF;
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: $menu-bg-color;
+    color: $menu-font-color;
+    padding: 5px;
+    margin: 0px;
+}
+
+#menu>a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: $menu-bg-color;
+    color: $menu-font-color;
+}

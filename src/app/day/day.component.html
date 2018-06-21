@@ -1,3 +1,16 @@
-<p>
-  day works!
-</p>
+<div class="element">
+  <table>
+    <thead>
+      <tr>
+        <td>Godzina</td>
+        <td>Wizyta</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hour of timetable">
+        <td>{{hour}}</td>
+        <td class="appointment"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

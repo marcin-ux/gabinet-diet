@@ -1,0 +1,17 @@
+$appointment-color: #00ff00;
+
+td.appointment {
+    background-color: $appointment-color;
+}
+
+table {
+    width: 100%;
+}
+
+td:nth-child(even) {
+    width: 70%;
+}
+
+td:first-child {
+    text-align: right;
+}

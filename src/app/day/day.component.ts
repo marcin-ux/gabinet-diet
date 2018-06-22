@@ -46,4 +46,9 @@ export class DayComponent implements OnInit {
     }
     return false;
   }
+
+  checkDuration(hour) {
+    console.log("Checking");
+    return 2;
+  }
 }

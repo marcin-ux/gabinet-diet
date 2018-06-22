@@ -9,7 +9,7 @@
     <tbody>
       <tr *ngFor="let hour of timetable">
         <td>{{hour}}</td>
-        <td class="appointment {{hour}}" *ngIf="checkApp(hour); else noVisit">Wizyta</td>
+        <td class="appointment {{hour}}" *ngIf="checkApp(hour); else noVisit" rowspan=2>Wizyta</td>
         <ng-template #noVisit></ng-template>
       </tr>
     </tbody>

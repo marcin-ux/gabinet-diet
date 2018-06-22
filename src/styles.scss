@@ -12,16 +12,21 @@ body {
     //flex-grow: 1;
     //flex: 1 1 200px;
     margin: 10px 10px;
-    min-width: 250px;
+    
 
-    @for $i from 1 through 12 {
+    @for $i from 1 through 4 {
         &.is-#{$i} {
-        flex: 0 0 calc(100% * #{$i / 12});
+        flex: 0 0 calc(100% * #{$i / 4});
         }
+    }
+
+    .full {
+        min-width: 250px;
     }
 }
 .element {
     background: $background;
     padding: 10px;
     border: solid #dddddd 1px;
+    min-width: 250px;
 }

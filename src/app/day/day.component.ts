@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DayComponent implements OnInit {
 
   appointments:any[];
+  currentDate:Number;
 
   constructor() {
   }
@@ -31,6 +32,7 @@ export class DayComponent implements OnInit {
         "cost": 150
         }
     ];
+    this.currentDate = Date.now();
   } 
 
 

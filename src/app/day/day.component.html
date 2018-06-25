@@ -8,11 +8,19 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let hour of timetable">
-        <td>{{hour}}</td>
-        <td class="appointment {{hour}}" *ngIf="checkApp(hour); else noVisit" rowspan=2>Wizyta</td>
-        <ng-template #noVisit></ng-template>
+      <tr *ngFor="let appoint of appointmentTable">
+        <td>{{appoint.hour}}</td>
+        <td class="appointment {{appoint.hour}}" *ngIf="appoint.meeting.patient" [rowspan]="appoint.meeting.duration">
+          {{appoint.meeting.patient}}<br />
+          {{appoint.meeting.visit}}<br />
+          {{appoint.meeting.cost}}zł
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
+
+<!--
+  <td class="appointment {{hour}}" *ngIf="checkApp(hour); else noVisit" rowspan=2>Wizyta</td>
+        <ng-template #noVisit></ng-template>
+-->

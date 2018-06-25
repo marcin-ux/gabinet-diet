@@ -2,6 +2,7 @@ $appointment-color: #68ca68;
 
 td.appointment {
     background-color: $appointment-color;
+    border: solid 1px darken($appointment-color, 20)
 }
 
 table {

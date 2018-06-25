@@ -9,6 +9,7 @@ export class DayComponent implements OnInit {
 
   appointments:any[];
   currentDate:Number;
+  appointmentTable:any[];
 
   constructor() {
   }
@@ -33,6 +34,117 @@ export class DayComponent implements OnInit {
         }
     ];
     this.currentDate = Date.now();
+    this.appointmentTable = [
+      {
+        hour: 800,
+        meeting: {}
+      },
+      {
+        hour: 830,
+        meeting: {}
+      },
+      {
+        hour: 900,
+        meeting: {
+          "date": "Today",
+          "time": 900,
+          "patient": "Joanna Nowak",
+          "visit": "Pierwsza",
+          "duration": 3,
+          "cost": 150
+        }
+      },
+      {
+        hour: 930,
+        meeting: {}
+      },
+      {
+        hour: 1000,
+        meeting: {}
+      },
+      {
+        hour: 1030,
+        meeting: {}
+      },
+      {
+        hour: 1100,
+        meeting: {}
+      },
+      {
+        hour: 1130,
+        meeting: {}
+      },
+      {
+        hour: 1200,
+        meeting: {}
+      },
+      {
+        hour: 1230,
+        meeting: {}
+      },
+      {
+        hour: 1300,
+        meeting: {}
+      },
+      {
+        hour: 1330,
+        meeting: {
+          "date": "Today",  
+          "patient": "Jan Kowalski",
+          "visit": "Kontrolna",
+          "duration": 2,
+          "cost": 100
+        }
+      },
+      {
+        hour: 1400,
+        meeting: {}
+      },
+      {
+        hour: 1430,
+        meeting: {}
+      },
+      {
+        hour: 1500,
+        meeting: {}
+      },
+      {
+        hour: 1530,
+        meeting: {}
+      },
+      {
+        hour: 1600,
+        meeting: {}
+      },
+      {
+        hour: 1630,
+        meeting: {}
+      },
+      {
+        hour: 1700,
+        meeting: {}
+      },
+      {
+        hour: 1730,
+        meeting: {}
+      },
+      {
+        hour: 1800,
+        meeting: {}
+      },
+      {
+        hour: 1830,
+        meeting: {}
+      },
+      {
+        hour: 1900,
+        meeting: {}
+      },
+      {
+        hour: 1930,
+        meeting: {}
+      },
+    ]
   } 
 
 
@@ -44,13 +156,13 @@ export class DayComponent implements OnInit {
     for(let app of this.appointments) {
       if (hour == app.time) {
         return true;
-      }
+      } 
     }
     return false;
   }
 
   checkDuration(hour) {
     console.log("Checking");
-    return 2;
+    return 1;
   }
 }
